@@ -10,7 +10,7 @@ npm install table-driven
 
 ## Basic usage
 
-```
+```js
 const tabledriven = require('table-driven')
 
 const add = function (a, b) {
@@ -57,10 +57,10 @@ describe('Test tabledriven as sync', () => {
 }) 
 ```
 
-### Author
+## Author
 
 [ktrysmt](https://twitter.com/ktrysmt)
 
-### License
+## License
 
 [MIT](./LICENSE)

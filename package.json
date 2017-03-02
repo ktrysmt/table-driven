@@ -1,20 +1,19 @@
 {
   "name": "table-driven",
-  "version": "0.0.1",
-  "description": "A table driven testing library",
+  "version": "0.0.2",
+  "description": "A table driven modules",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha test"
   },
   "keywords": [
-    "test",
     "table driven",
     "data driven"
   ],
   "author": "ktrysmt <kotaro.yoshimatsu@gmail.com>",
   "repository" :
   { "type" : "git"
-  , "url" : "http://github.com/npm/npm.git"
+  , "url" : "http://github.com/ktrysmt/table-driven.git"
   },
   "license": "MIT",
   "dependencies": {
