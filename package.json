@@ -1,0 +1,27 @@
+{
+  "name": "table-driven",
+  "version": "0.0.1",
+  "description": "A table driven testing library",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "keywords": [
+    "test",
+    "table driven",
+    "data driven"
+  ],
+  "author": "ktrysmt <kotaro.yoshimatsu@gmail.com>",
+  "repository" :
+  { "type" : "git"
+  , "url" : "http://github.com/npm/npm.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^3.16.1",
+    "eslint-config-standard": "^7.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.1.0",
+    "mocha": "^3.2.0"
+  }
+}
