@@ -1,14 +1,15 @@
 {
   "name": "table-driven",
-  "version": "0.0.2",
-  "description": "A table driven modules",
+  "version": "0.0.3",
+  "description": "A simple table driven modules",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha test"
   },
   "keywords": [
     "table driven",
-    "data driven"
+    "data driven",
+    "testing-tools"
   ],
   "author": "ktrysmt <kotaro.yoshimatsu@gmail.com>",
   "repository" :
@@ -16,7 +17,7 @@
   , "url" : "http://github.com/ktrysmt/table-driven.git"
   },
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "eslint": "^3.16.1",
     "eslint-config-standard": "^7.0.0",
     "eslint-plugin-promise": "^3.5.0",

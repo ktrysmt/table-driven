@@ -1,6 +1,6 @@
 # table-driven
 
-> Table Driven Functional library for NodeJS
+> A small and simple table driven module for NodeJS
 
 ## Install
 
@@ -40,7 +40,12 @@ describe('Test tabledriven as sync', () => {
       return '<' + a + '>'
     }
     it('should return markuped string', () => {
-      const arr = tabledriven([1, 2], markup)
+      const arr = tabledriven(
+          [
+            1, 
+            2
+          ]
+          , markup)
       assert.deepEqual(arr, [ '<1>', '<2>' ])
     })
   })
@@ -50,7 +55,12 @@ describe('Test tabledriven as sync', () => {
       return a + b
     }
     it('should return markuped string', () => {
-      const arr = tabledriven([ [1, 2], [2, 2] ], add)
+      const arr = tabledriven(
+          [ 
+            [ 1, 2 ], 
+            [ 2, 2 ]
+          ]
+          , add)
       assert.deepEqual(arr, [ 3, 4 ])
     })
   })
