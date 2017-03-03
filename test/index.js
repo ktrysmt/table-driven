@@ -6,6 +6,7 @@ describe('Test tabledriven as sync', () => {
     const markup = function (a) {
       return '<' + a + '>'
     }
+
     it('should return markuped string', () => {
       const arr = tabledriven([1, 2], markup)
       assert.deepEqual(arr, [ '<1>', '<2>' ])
@@ -16,9 +17,32 @@ describe('Test tabledriven as sync', () => {
     const add = function (a, b) {
       return a + b
     }
+
     it('should return markuped string', () => {
       const arr = tabledriven([ [1, 2], [2, 2] ], add)
       assert.deepEqual(arr, [ 3, 4 ])
+    })
+  })
+
+  describe('Test as failure', () => {
+    it('sould be failure as zero argument', () => {
+      assert.throws(() => { tabledriven() }, /any arguments/)
+    })
+
+    it('sould be failure as too few arguments', () => {
+      assert.throws(() => { tabledriven([1, 2]) }, /is two/)
+    })
+
+    it('sould be failure as too many arguments', () => {
+      assert.throws(() => { tabledriven([1, 2], [3, 4], [5, 6]) }, /is two/)
+    })
+
+    it('should be that the first argument is an array type', () => {
+      assert.throws(() => { tabledriven('foo', (x) => { return x }) }, /an array type/)
+    })
+
+    it('should be that the first argument is an function type', () => {
+      assert.throws(() => { tabledriven([1, 2], [1, 2]) }, /an function type/)
     })
   })
 })

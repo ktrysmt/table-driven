@@ -1,6 +1,6 @@
 {
   "name": "table-driven",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple table driven modules",
   "main": "lib/index.js",
   "scripts": {
