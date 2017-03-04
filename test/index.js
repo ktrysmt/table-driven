@@ -18,7 +18,7 @@ describe('Test tabledriven as sync', () => {
       return a + b
     }
 
-    it('should return markuped string', () => {
+    it('should return result of addition of args', () => {
       const arr = tabledriven([ [1, 2], [2, 2] ], add)
       assert.deepEqual(arr, [ 3, 4 ])
     })

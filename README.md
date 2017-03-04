@@ -54,7 +54,7 @@ describe('Test tabledriven as sync', () => {
     const add = function (a, b) {
       return a + b
     }
-    it('should return markuped string', () => {
+    it('should return result of addition of args', () => {
       const arr = tabledriven(
           [ 
             [ 1, 2 ], 
