@@ -30,11 +30,7 @@ describe('Test tabledriven as sync', () => {
     })
 
     it('sould be failure as too few arguments', () => {
-      assert.throws(() => { tabledriven([1, 2]) }, /is two/)
-    })
-
-    it('sould be failure as too many arguments', () => {
-      assert.throws(() => { tabledriven([1, 2], [3, 4], [5, 6]) }, /is two/)
+      assert.throws(() => { tabledriven([1, 2]) }, /is 2/)
     })
 
     it('should be that the first argument is an array type', () => {
