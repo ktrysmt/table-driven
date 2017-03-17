@@ -1,6 +1,6 @@
 {
   "name": "table-driven",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A simple table driven modules",
   "main": "lib/index.js",
   "scripts": {
@@ -9,6 +9,7 @@
   "keywords": [
     "table driven",
     "data driven",
+    "async",
     "testing-tools"
   ],
   "author": "ktrysmt <kotaro.yoshimatsu@gmail.com>",
