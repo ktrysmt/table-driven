@@ -20,7 +20,7 @@ describe('Test as sync', () => {
 
     it('should return result of addition of args', () => {
       const arr = tabledriven([ [1, 2], [2, 2] ], add)
-      assert.deepEqual(arr, [ 3, 4 ])
+      assert.deepEqual(arr, [3, 4])
     })
   })
 
@@ -47,14 +47,13 @@ describe('Test as sync', () => {
   })
 
   describe('Test as async', () => {
-    const add = function (a, b) {
-      return a + b
+    const add = function (a) {
+      return '@' + a
     }
 
-    it('Tentatively', (done) => {
-      return tabledriven([ [1, 2], [2, 2] ], add, true).then((result) => {
-        console.log(result);
-        done()
+    it('if third argument has TRUE then should return a normal calcurated array as promise object', () => {
+      return tabledriven([ 2, 3 ], add, true).then((result) => {
+        assert.deepEqual(result, ['@2', '@3'])
       })
     })
   })
