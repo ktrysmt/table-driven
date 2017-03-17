@@ -48,12 +48,12 @@ describe('Test as sync', () => {
 
   describe('Test as async', () => {
     const add = function (a) {
-      return '@' + a
+      return a ** a
     }
 
     it('if third argument has TRUE then should return a normal calcurated array as promise object', () => {
-      return tabledriven([ 2, 3 ], add, true).then((result) => {
-        assert.deepEqual(result, ['@2', '@3'])
+      return tabledriven([ 1, 2, 3 ], add, true).then((result) => {
+        assert.deepEqual(result, [ 1, 4, 27 ])
       })
     })
   })

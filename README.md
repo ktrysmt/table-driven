@@ -2,6 +2,10 @@
 
 > A small and simple table driven module for NodeJS
 
+## Requirement
+
+- NodeJS >= v7.6
+
 ## Install
 
 ```
@@ -24,6 +28,22 @@ const result = tabledriven([
 ], add)
 
 console.log(result) // [ 3, 7, 11 ]
+```
+
+### Use as async
+
+If give third argument as true then return a promise object and pass to `then` or `catch` as method chain.
+
+```js
+const tabledriven = require('table-driven')
+
+const pow = function (a) {
+  return a ** a
+}
+
+tabledriven([ 1, 2, 3 ], add, true).then((result) => {
+    console.log(result) // [ 1, 4, 27 ]
+})      
 ```
 
 ### with Mocha
