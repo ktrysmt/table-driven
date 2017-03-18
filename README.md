@@ -12,7 +12,9 @@
 npm install table-driven
 ```
 
-## Basic usage
+## Usage
+
+### Basic 
 
 ```js
 const tabledriven = require('table-driven')
