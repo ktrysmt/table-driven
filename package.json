@@ -4,7 +4,7 @@
   "description": "A simple table driven modules",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha lib/*_test.js"
   },
   "keywords": [
     "table driven",
