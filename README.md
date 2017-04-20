@@ -1,5 +1,7 @@
 # table-driven
 
+[![CircleCI](https://circleci.com/gh/ktrysmt/table-driven.svg?style=svg)](https://circleci.com/gh/ktrysmt/table-driven)
+
 > A small and simple table driven module for NodeJS
 
 ## Requirement
