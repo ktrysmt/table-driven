@@ -1,5 +1,6 @@
 # table-driven
 
+[![npm version](https://badge.fury.io/js/table-driven.svg)](https://badge.fury.io/js/table-driven)
 [![CircleCI](https://circleci.com/gh/ktrysmt/table-driven.svg?style=svg)](https://circleci.com/gh/ktrysmt/table-driven)
 
 > A small and simple table driven module for NodeJS
