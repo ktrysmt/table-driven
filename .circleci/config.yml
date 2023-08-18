@@ -1,0 +1,27 @@
+version: 2.1
+executors:
+  docker-executor:
+    environment:
+      TEST_ENV: test
+    docker:
+      - image: circleci/node:14
+
+jobs:
+  build:
+    executor: docker-executor
+    steps:
+      - checkout
+
+      - run:
+          name: Install Dependencies
+          command: yarn install
+
+      - run:
+          name: Run Tests
+          command: yarn test
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
